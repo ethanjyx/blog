@@ -1,9 +1,9 @@
 import './global.css'
 import type { Metadata } from 'next'
-import { Libre_Baskerville } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { GeistMono } from 'geist/font/mono'
 
-const libreBaskerville = Libre_Baskerville({ subsets: ['latin'], weight: ['400', '700'] })
+const inter = Inter({ subsets: ['latin'] })
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
@@ -50,7 +50,7 @@ export default function RootLayout({
       lang="en"
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
-        libreBaskerville.className,
+        inter.className,
         GeistMono.variable
       )}
     >
