@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "deploy": "npm run build && wrangler pages deploy .next --project-name=blog --commit-dirty=true",
+    "deploy": "npm run build && wrangler pages deploy out --project-name=blog --commit-dirty=true",
     "deploy:create": "wrangler pages project create blog --production-branch=main --compatibility-date=2024-01-15"
   },
   "dependencies": {
