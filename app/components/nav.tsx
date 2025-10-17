@@ -71,7 +71,7 @@ export function Navbar() {
               href="https://x.com/ethanjyx"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-2 rounded-md text-black hover:bg-gray-100 transition-colors"
+              className="flex items-center gap-1 px-3 py-2 rounded-lg text-black hover:bg-gray-100 transition-colors"
             >
               <XIcon />
               <span className="text-sm">Follow me</span>

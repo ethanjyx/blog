@@ -7,12 +7,17 @@ export default function Page() {
         Ethan Jiang
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`I'm founder of `}
+        <a href="https://tight.studio/" className="underline">Tight Studio</a>
+        {`, an AI native screen recorder to help people make product demos easily.`}
       </p>
+      <br/>
+      <p className="mb-2">Previously:</p>
+      <ul className="mb-4 list-disc list-inside">
+        <li>Founding engineer and eng manager at Klarity.ai (raised $70m series B from NFDG)</li>
+        <li>Founding engineer at Covariant.ai (acqui-hired by Amazon)</li>
+        <li>Software engineer at Meta</li>
+      </ul>
       {/* <div className="my-8">
         <BlogPosts />
       </div> */}

@@ -83,7 +83,7 @@ export function formatDate(date: string, includeRelative = false) {
   })
 
   if (!includeRelative) {
-    return fullDate
+    return targetDate.getFullYear().toString()
   }
 
   return `${fullDate} (${formattedDate})`
