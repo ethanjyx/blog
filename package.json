@@ -2,8 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start",
+    "deploy": "npm run build && wrangler pages deploy .next --project-name=blog --commit-dirty=true",
+    "deploy:create": "wrangler pages project create blog --production-branch=main --compatibility-date=2024-01-15"
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.0-alpha.13",

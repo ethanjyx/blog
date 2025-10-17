@@ -1,42 +1,49 @@
-# Portfolio Blog Starter
+# Blog
 
-This is a porfolio site template complete with a blog. Includes:
+A Next.js blog deployed on Cloudflare Pages.
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
-
-## Demo
-
-https://portfolio-blog-starter.vercel.app
-
-## How to Use
-
-You can choose from one of the following two methods to use this repository:
-
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+## Development
 
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+npm run dev
 ```
 
-Then, run Next.js in development mode:
+## Deployment
 
-```bash
-pnpm dev
-```
+### Prerequisites
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+1. Install Wrangler CLI globally:
+   ```bash
+   npm install -g wrangler
+   ```
+
+2. Set up environment variables in `~/.zshrc`:
+   ```bash
+   export CLOUDFLARE_API_TOKEN="your_token_here"
+   export CLOUDFLARE_ACCOUNT_ID="your_account_id_here"
+   ```
+
+### Deploy
+
+1. **First time setup** (create Cloudflare Pages project):
+   ```bash
+   npm run deploy:create
+   ```
+
+2. **Deploy to Cloudflare Pages**:
+   ```bash
+   npm run deploy
+   ```
+
+### Live Site
+
+- Production: https://blog-ea9.pages.dev
+- Latest deployment: https://2ea11dfa.blog-ea9.pages.dev
+
+## Commands
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run deploy` - Build and deploy to Cloudflare Pages
+- `npm run deploy:create` - Create new Cloudflare Pages project (one-time setup)
